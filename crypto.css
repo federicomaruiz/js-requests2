@@ -1,0 +1,17 @@
+.column {
+  width: 10%;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-crypto {
+  height: 60px;
+  width: 60px;
+}
