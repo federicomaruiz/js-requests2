@@ -14,15 +14,18 @@ async function onRequestAwait() {
 }
 
 
-
 function printData(dataJSON) {
+
     const lista = document.getElementById("lista")
+
     for (const cryptoInfo of dataJSON) {
+
         const a = document.createElement("a")
         const p = document.createElement("p")
         const img = document.createElement("img")
+        
 
-        a.href = `crypto_detail.html?id=${cryptoInfo.id}`
+        a.href = `detailCrypto.html?id=${cryptoInfo.id}`
 
         a.classList.add("column")
         img.classList.add("img-crypto")
@@ -35,6 +38,7 @@ function printData(dataJSON) {
 
         lista.appendChild(a)
     }
+  
 }
 
 
