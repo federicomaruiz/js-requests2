@@ -56,6 +56,18 @@ promesa
 
       img.src = usersJson.image.large;
 
+      if (usersJson.market_data.price_change_percentage_24h < 0){
+
+        porcentaje.textContent = "% " + usersJson.market_data.price_change_percentage_24h + " ↓"; 
+
+      } else if (usersJson.market_data.price_change_percentage_24h > 0){ 
+        
+        porcentaje.textContent = "% " + usersJson.market_data.price_change_percentage_24h + " ↑";
+        
+      }else {
+
+      }
+
       lista.appendChild(h3);
       lista.appendChild(p);
       lista.appendChild(porcentaje);
